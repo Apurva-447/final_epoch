@@ -1,0 +1,49 @@
+/* ================================
+   EVENTS PAGE
+================================ */
+.event-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0f0f0f, #151515);
+  color: #fff;
+}
+
+.event-page h1 {
+  text-align: center;
+  color: #ff4d6d;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.event-page p {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+/* Event list */
+.event-page ul {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+.event-page li {
+  background: #181818;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-page li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.event-page li strong {
+  color: #ff4d6d;
+  font-size: 18px;
+}

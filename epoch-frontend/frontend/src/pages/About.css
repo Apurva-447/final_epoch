@@ -1,0 +1,60 @@
+/* ================================
+   ABOUT PAGE
+================================ */
+.about-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0f0f0f, #151515);
+  color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 900px;
+  background: #181818;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  animation: fadeUp 0.8s ease;
+}
+
+.about-page h1 {
+  text-align: center;
+  color: #ff4d6d;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.about-page h2 {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-page p {
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-page ul {
+  margin-left: 20px;
+  color: #ccc;
+}
+
+.about-page ul li {
+  margin-bottom: 8px;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

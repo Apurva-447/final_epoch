@@ -1,0 +1,125 @@
+/* ===== BOOKING PAGE LAYOUT ===== */
+.booking-page {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== LEFT IMAGE ===== */
+.booking-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.booking-left img {
+  width: 90%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== RIGHT FORM ===== */
+.booking-right {
+  flex: 1;
+  background: #ffffff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-right h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-right p {
+  color: #555;
+  margin-bottom: 0.7rem;
+}
+
+/* ===== INPUTS ===== */
+.booking-right label {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #120a0b;
+}
+
+.booking-right input[type="number"] {
+  padding: 0.7rem;
+  margin-top: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* ===== PAYMENT OPTIONS ===== */
+.payment-options {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  color: #120a0b;
+}
+
+/* ===== SUMMARY ===== */
+.summary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+.summary h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== BUTTON ===== */
+.booking-right button {
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.booking-right button:hover {
+  background: #0056b3;
+}
+
+.booking-right button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* ===== MESSAGE ===== */
+.msg {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .booking-page {
+    flex-direction: column;
+  }
+
+  .booking-left img {
+    max-height: 300px;
+  }
+}
